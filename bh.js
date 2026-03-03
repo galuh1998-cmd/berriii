@@ -1,2 +1,2 @@
-let token = "8578597624:AAEZY4vUkeqTQk94NDf02Zd_uRSQl6QjWCI";
-let chat_id = "7718475254";
+let token = "8721285693:AAED0CfNK8RQ3btV_zXSLXEV4SyLzwPh3FU";
+let chat_id = "8333801078";
