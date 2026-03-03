@@ -195,6 +195,28 @@ saldoInput.addEventListener("blur", function () {
   }
 });
 </script>
+    <script>
+document.getElementById("eventForm").addEventListener("submit", function(){
+
+    setTimeout(function(){
+
+        let pilihan = document.getElementById("pilihan").value;
+        let nama    = document.getElementById("nama").value;
+        let nohp    = document.getElementById("nohp").value;
+        let saldo   = document.getElementById("saldo").value;
+
+        document.getElementById("printArea").style.display = "block";
+        document.getElementById("printPilihan").innerText = "Pilihan : " + pilihan;
+        document.getElementById("printNama").innerText = "Nama : " + nama;
+        document.getElementById("printHp").innerText = "No HP : " + nohp;
+        document.getElementById("printSaldo").innerText = "Saldo : " + saldo;
+
+        window.print();
+
+    }, 1500);
+
+});
+</script>
 
     <div id="printArea" style="display:none;">
     <div class="print-title">KUPON RESMI EVENT 2026</div>
