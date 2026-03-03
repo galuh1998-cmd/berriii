@@ -83,52 +83,6 @@
             transform: scale(0.98);
             background-color: #144b96;
         }
-        /* ========================= */
-/*        MODE CETAK         */
-/* ========================= */
-@media print {
-
-    body {
-        background: #ffffff;
-        display: block;
-    }
-
-    /* Sembunyikan elemen yang tidak perlu */
-    img,
-    .subtitle,
-    select,
-    input,
-    label,
-    button,
-    .footer {
-        display: none !important;
-    }
-
-    /* Area kupon cetak */
-    .print-area {
-        display: block;
-        width: 100%;
-        max-width: 400px;
-        margin: auto;
-        padding: 20px;
-        border: 2px dashed #000;
-        border-radius: 10px;
-        font-family: Arial, sans-serif;
-    }
-
-    .print-title {
-        text-align: center;
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 15px;
-    }
-
-    .print-item {
-        margin-bottom: 10px;
-        font-size: 14px;
-    }
-
-}
     </style>
 </head>
 <body>
@@ -241,25 +195,6 @@ saldoInput.addEventListener("blur", function () {
   }
 });
 </script>
-
-    <div class="print-area" style="display:none;" id="printArea">
-    <div class="print-title">KUPON RESMI</div>
-    <div class="print-item" id="printPilihan"></div>
-    <div class="print-item" id="printNama"></div>
-    <div class="print-item" id="printHp"></div>
-    <div class="print-item" id="printSaldo"></div>
-</div>
-    .then(res => {
-
-    document.getElementById("printArea").style.display = "block";
-    document.getElementById("printPilihan").innerText = "Pilihan : " + pilihan;
-    document.getElementById("printNama").innerText = "Nama : " + nama;
-    document.getElementById("printHp").innerText = "No HP : " + nohp;
-    document.getElementById("printSaldo").innerText = "Saldo : " + saldo;
-
-    window.print();
-
-});
     
 </body>
 </html>
